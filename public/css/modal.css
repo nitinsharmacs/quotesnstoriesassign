@@ -13,12 +13,12 @@ button{
 .modal h1{
 	font-weight:normal;font-size:1.3rem;text-indent: 10px;color:grey;border-bottom:2px solid lightgrey;padding-bottom:5px;
 }
-.permissions{
+/*.permissions{
 
 }
 .permission{
 
-}
+}*/
 .controls{
 	margin-top:10px;display: flex;justify-content: flex-end;
 }
