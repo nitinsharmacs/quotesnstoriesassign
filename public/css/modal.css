@@ -80,3 +80,10 @@ button{
     transform: rotate(360deg);
   }
 }
+
+
+@media screen and (max-width:325px){
+	.modal{
+		width:95%;
+	}
+}

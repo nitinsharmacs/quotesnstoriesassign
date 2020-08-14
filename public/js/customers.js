@@ -2,8 +2,11 @@
 
 let modaldiv = document.getElementById('modaldiv');
 let modal = document.getElementById('modal');
+
 const loadDetails = (email) => {
 	modaldiv.setAttribute('class','modaldiv show');
+	modal.innerHTML = `<div class='loader'>
+		</div>`;
 	fetch('/home/permissions', {
 		method:'POST',
 		headers:{'Content-Type':'application/json'},
