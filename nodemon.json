@@ -1,0 +1,8 @@
+{
+	"env":{
+		"host": "db4free.net",
+		 "user": "nitinsharmacs",
+		"password": "nitin123@#",
+		"database": "feeberchat"
+	}
+}

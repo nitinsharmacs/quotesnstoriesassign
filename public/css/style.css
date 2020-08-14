@@ -1,0 +1,42 @@
+body{
+	padding:0;margin:0;
+}
+.container{
+	position:fixed;top:0;left:0;right:0;bottom:0;overflow:auto;height:100vh;background:#f1eaea;
+}
+.form{
+	display:flex;flex-flow:column;box-shadow: 0px 0px 7px #928282;width:500px;padding:10px;margin:auto;margin-top:20vh;border-radius: 5px;
+}
+.form h1{
+	font-weight: normal;text-align: center;
+}
+.form input{
+	padding:10px;margin:10px;font-size: 1.2rem;
+}
+.form button{
+	padding:10px;margin:10px;font-size:1.2rem;border:none;background:#4daaf5;color:white;font-weight: 600;margin-top:50px;
+}
+.form a{
+	text-decoration:none;color:purple;margin:10px;
+}
+.form select{
+	padding:10px;margin:10px;font-size:1.2rem;
+}
+.error{
+	margin:10px;color:white;background:#ea5151;padding:10px;
+}
+.message{
+	margin:10px;color:white;background:green;padding:10px;
+}
+
+@media screen and (max-width:650px){
+	.form{
+		width:80%;
+	}
+	.form input, .form select{
+		padding:8px;margin:5px;font-size: 1rem;
+	}
+	.form button{
+		margin-top:30px;font-size: 1rem;
+	}
+}

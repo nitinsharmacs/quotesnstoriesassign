@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="/css/customers.css">
+</head>
+<body>
+	<div class='container'>
+		<nav class='navbar'>
+			<ul class='navlist'>
+				<li ><a href='/home'>Home</a></li>
+				<li ><a active='true' href='/home/customers'>Give Permissions</a></li>
+				<li><a href='/auth/logout'>Logout</a></li>
+			</ul>
+		</nav>
+		<div class='content'>
+			<h1 class='heading'>Customers</h1>
+			
+			<% for(customer of customers){ %>
+				<div class='customer' onclick='loadDetails("<%= customer.email %>");'>
+				<p>Email : <%= customer.email %></p>
+			</div>
+			<% } %>
+		</div>
+	</div>
+	<%- include('../includes/modal.ejs') %>
+</body>
+<script type="text/javascript" src='/js/customers.js'></script>
+</html>

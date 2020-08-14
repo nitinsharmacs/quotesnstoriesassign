@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+<body>
+	<div class='container'>
+		<nav class='navbar'>
+			<ul class='navlist'>
+				<% if(role==='admin'){ %>
+					<li><a href='/home/customers'>Give Permissions</a></li>
+				<% } %>
+				<li><a href='/auth/logout'>Logout</a></li>
+			</ul>
+		</nav>
+		<% if(role==='customer'){ %>
+			<% if(permissions.accessGreenButton===1){ %>
+			<button for='greenbtn' allow='false'>Access Green Button</button>
+			<% } %>
+			<% if(permissions.accessRedButton===1){ %>
+			<button for='redbtn' allow='false'>Access Red Button</button>
+			<% } %>
+		<% } else { %>
+		<button for='greenbtn' onclick='alert("Access Green Button")'>Access Green Button</button>
+		<button for='redbtn' onclick='alert("Access Red Button")'>Access Red Button</button>
+		<% } %>
+	</div>
+</body>
+</html>

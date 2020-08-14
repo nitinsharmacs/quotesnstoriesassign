@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<div class='container'>
+		<form method='POST' class='form' action='/auth/signup'> 
+			<h1>Register</h1>
+			<input type='email' placeholder='Enter Email' name='email' />
+			<input type='password' placeholder="Enter password" name='password' />
+			<select name='role'>
+				<option value='admin'>Admin</option>
+				<option value='customer'>Customer</option>
+			</select>
+			<button>Register</button>	
+			<a href='/auth/login'>Not Registered Yet?</a>
+			<% if(error.length>0){ %>
+			<div class='error'>
+				 <%= error[0] %>
+			</div>
+			<% } %>
+			<% if(message.length>0){ %>
+			<div class='message'>
+				 <%= message[0] %>
+			</div>
+			<% } %>
+		</form>
+	</div>
+</body>
+</html>

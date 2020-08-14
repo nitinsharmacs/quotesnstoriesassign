@@ -1,0 +1,30 @@
+body{
+	padding:0;margin:0;
+}
+.container{
+	display: flex;align-items:center;justify-content: center;height:100vh;background:#f1eaea;
+}
+.container button{
+	padding:10px;border:none;margin:10px;box-shadow:0px 0px 7px #928282;color:white;font-size:1.2rem;cursor: pointer;
+}
+.container button[for=greenbtn]{
+	background:linear-gradient(to bottom, green 56% , #33b52a 100%);
+}
+.container button[for=redbtn]{
+	background:linear-gradient(to bottom, #f53e3e 56% , #ff8f8f 100%);
+}
+.container button[allow=false]{
+	cursor: not-allowed;
+}
+.navbar{
+	position: fixed;top:0;background-color:#4daaf5;left:0;right:0;box-shadow: 0px 1px 20px -2px #9a9494;
+}
+.navlist {
+	list-style: none;margin:0;display: flex;justify-content: flex-end;padding:15px;
+}
+.navlist li{
+	margin:0px 10px;
+}
+.navlist li a{
+	/*text-decoration: none;position: absolute;top:5px;right:5px;display: block;padding:10px;background:#4daaf5;color:white;font-weight: bold;letter-spacing: 1px;*/color:white;text-decoration:none;font-size:1.1rem;
+}
