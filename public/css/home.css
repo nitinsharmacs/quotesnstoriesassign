@@ -20,11 +20,17 @@ body{
 	position: fixed;top:0;background-color:#4daaf5;left:0;right:0;box-shadow: 0px 1px 20px -2px #9a9494;
 }
 .navlist {
-	list-style: none;margin:0;display: flex;justify-content: flex-end;padding:15px;
+	list-style: none;margin:0;display: flex;justify-content: flex-end;padding:15px;width:1335px;margin-right:auto;margin-left:auto;
 }
 .navlist li{
 	margin:0px 10px;
 }
 .navlist li a{
 	/*text-decoration: none;position: absolute;top:5px;right:5px;display: block;padding:10px;background:#4daaf5;color:white;font-weight: bold;letter-spacing: 1px;*/color:white;text-decoration:none;font-size:1.1rem;
+}
+
+@media screen and (max-width:1335px){
+	.navlist{
+		width:auto;
+	}
 }
